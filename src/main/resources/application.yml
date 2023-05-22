@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: r2dbc:mariadb://localhost:3306/innodb
+    username: admin
+    password: password
+
+jjwt:
+  access-token:
+    expired-time: 1
+    secret-key: aeoifhaowejfaowjefalejfi!@&UE@IDBJfksajdfawefawnefioawneflwaknefio
+  refresh-token:
+    expired-time: 1440
+    secret-key: aeoifhaowejfaowjefalejfi!@&UE@awefwa!@#!FVAIDBJfksajdfawefawnefioawneflwaknefio
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
