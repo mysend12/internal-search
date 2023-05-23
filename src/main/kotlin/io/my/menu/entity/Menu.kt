@@ -1,9 +1,9 @@
-package io.my.brand.entity
+package io.my.menu.entity
 
 import io.my.base.entity.BaseStatus
 import org.springframework.data.annotation.Id
 
-data class Brand(
+data class Menu(
     @Id val id: Long,
     val name: String,
     val englishName: String,
