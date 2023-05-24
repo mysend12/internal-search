@@ -1,6 +1,6 @@
 package io.my.analysis
 
-interface KoreanAnalysis {
+interface KoreanKeywordAnalysis {
 
     fun analysis(keyword: String): String
 
