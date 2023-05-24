@@ -1,7 +1,7 @@
 spring:
   r2dbc:
-    url: r2dbc:mariadb://localhost:3306/innodb
-    username: admin
+    url: r2dbc:mariadb://localhost:3306/test
+    username: root
     password: password
 
 jjwt:

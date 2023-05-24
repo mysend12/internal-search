@@ -31,13 +31,15 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("com.mysql:mysql-connector-j")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
 
     // https://mvnrepository.com/artifact/org.apache.lucene/lucene-analysis-nori
-    runtimeOnly("org.apache.lucene:lucene-analysis-nori:9.6.0")
+    implementation("org.apache.lucene:lucene-analysis-nori:9.6.0")
+
+    // https://mvnrepository.com/artifact/org.mariadb/r2dbc-mariadb
+    implementation("org.mariadb:r2dbc-mariadb:1.1.4")
 }
 
 tasks.withType<KotlinCompile> {
